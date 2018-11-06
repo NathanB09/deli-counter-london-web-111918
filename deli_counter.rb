@@ -12,5 +12,14 @@ def line(people)
 end
 
 def take_a_number(people, name)
-  
+  people << name
+  puts "Welcome, #{name}. You are number #{people.index(name) + 1} in line."
+end
+
+def now_serving(people)
+  if people.size == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{people.shift}"
+  end
 end
