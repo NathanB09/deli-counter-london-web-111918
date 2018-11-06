@@ -4,9 +4,13 @@ def line(people)
     puts "The line is currently empty."
   else
     in_line = ["The line is currently:"]
-    people.each do |person|
-      in_line << "#{people.index(person) + 1}. #{person}"
+    people.each do |name|
+      in_line << "#{people.index(name) + 1}. #{name}"
     end
     puts in_line.join(" ")
   end
+end
+
+def take_a_number(people, name)
+  
 end
